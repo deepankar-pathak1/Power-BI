@@ -1,0 +1,5 @@
+Red Sales = sumx(
+    FILTER(Sales, RELATED ('Product'[Color]) = "Red"
+    ),
+    Sales[Quantity]*Sales[Net Price]
+    )
